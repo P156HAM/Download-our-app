@@ -86,3 +86,37 @@ h1{
     width: 80%;
     text-align: center;
 }
+
+.main-wrapper{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 50px 1fr 1fr ;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    grid: 
+    " . a a a a ."
+    " . b c d e ."
+    " . . . . . .";
+}
+
+.main-title{
+    grid-area: a;  
+}
+.product-1{
+    grid-area: b;
+}
+.product-2{
+    grid-area: c;
+}
+.product-3{
+    grid-area: d;
+}
+.product-4{
+    grid-area: e;
+}
+
+.product-img{
+    width: 200px;
+    height: 300px;
+}
